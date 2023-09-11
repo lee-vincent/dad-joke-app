@@ -12,7 +12,9 @@ export default defineEventHandler(async (event) => {
 
   const completion = await openai.createChatCompletion({
     model: "gpt-3.5-turbo",
-    messages: [{ role: "user", content: "what is a 5 digit prime number?" }],
+    messages: [{ role: "user", content: "Send me any 5 digit prime number." }],
+    temperature: 0.7,
+    n: 2,
   });
 
   return completion.data;
