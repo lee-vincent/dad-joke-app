@@ -1,7 +1,8 @@
 import { Configuration, OpenAIApi } from "openai";
+import { customerSupportAgent } from "~~/agents";
 
 export default defineEventHandler(async (event) => {
-  
+
   const body = await readBody(event);
 
   const { OPENAI_API_KEY } = useRuntimeConfig();
@@ -16,7 +17,8 @@ export default defineEventHandler(async (event) => {
     model: "gpt-3.5-turbo",
     // messages: [{ role: "user", content: "Send me any 5 digit prime number." }],
     messages: body.messages || [],
-    temperature: body. temperature || 0.7,
+    temperature: body.temperature || 0.7,
+    ...customerSupportAgent(body),
   });
 
   return completion.data;
