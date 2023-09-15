@@ -1,9 +1,15 @@
 import { Configuration, OpenAIApi } from "openai";
-import { customerSupportAgent } from "~~/agents";
+import * as agents from "@/agents"
 
 export default defineEventHandler(async (event) => {
 
   const body = await readBody(event);
+  const agent = body.agent || "customerSupportAgent";
+  console.log("Object.keys(agents) = " + Object.keys(agents));
+
+  if (!Object.keys(agents).includes(agent)) {
+    throw new Error(`${agent} doesn't exist`);
+  };
 
   const { OPENAI_API_KEY } = useRuntimeConfig();
 
@@ -18,7 +24,8 @@ export default defineEventHandler(async (event) => {
     // messages: [{ role: "user", content: "Send me any 5 digit prime number." }],
     messages: body.messages || [],
     temperature: body.temperature || 0.7,
-    ...customerSupportAgent(body),
+    // @ts-expect-error checking above if agent exists
+    ...agents[agent](body),
   });
 
   return completion.data;
