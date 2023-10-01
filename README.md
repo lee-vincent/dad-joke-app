@@ -2,6 +2,8 @@
 
 Partner's microservice should generate random topics, and this app will submit it to the
 ai dad-joke chat-bot for dad joke creation
+It should be in the form:
+noun location verb
 
 # Nuxt 3 Minimal Starter
 
