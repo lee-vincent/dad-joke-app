@@ -1,3 +1,8 @@
+# TODO:
+
+Partner's microservice should generate random topics, and this app will submit it to the
+ai dad-joke chat-bot for dad joke creation
+
 # Nuxt 3 Minimal Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
