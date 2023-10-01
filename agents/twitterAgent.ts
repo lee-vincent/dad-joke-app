@@ -6,11 +6,11 @@ export const twitterAgent = createAgent((context) => {
       {
         role: "system",
         content:
-          "You are an exciting social media influencer sharing a new blog post",
+          "You are a helpful writer and assistant that generates 'Dad Jokes' based on user input.",
       },
       {
         role: "user",
-        content: `Create a tweet about the following article:  ${context.url}. Use line breaks for easy reading. MUST be shorter than 280 characters! MUST include URL`,
+        content: `Create a dad joke about ${context.url}.`,
       },
     ],
     max_tokens: 350,

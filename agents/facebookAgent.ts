@@ -6,11 +6,11 @@ export const facebookAgent = createAgent((context) => {
       {
         role: "system",
         content:
-          "You are a friendly social media influencer sharing a new blog post",
+          "You are a helpful writer and assistant that generates 'Dad Jokes' based on user input.",
       },
       {
         role: "user",
-        content: `Create a facebook post to hype the following article:  ${context.url}. Use line breaks for easy reading`,
+        content: `Create a dad joke about ${context.url}.`,
       },
     ],
   };
