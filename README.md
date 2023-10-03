@@ -3,7 +3,9 @@
 Partner's microservice should generate random topics, and this app will submit it to the
 ai dad-joke chat-bot for dad joke creation
 It should be in the form:
-noun location verb
+noun location verb adverb
+could have an upvote button or like/dislike button
+could have an "I don't get it button that explains the joke in painful detail"
 
 EC2 instructions:
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
