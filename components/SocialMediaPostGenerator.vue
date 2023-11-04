@@ -1,24 +1,24 @@
 <script setup lang="ts">
-const form = ref({
-  url: "",
-  temperature: 1,
-});
+	const form = ref({
+		url: "",
+		temperature: 1,
+	});
 
-const twitterCard = ref();
-const facebookCard = ref();
+	const twitterCard = ref();
+	const facebookCard = ref();
 
-async function handleImport(e: typeof form.value) {
-  form.value = { ...e };
-  if (!form.value.url) return;
-  twitterCard.value.generate();
-  facebookCard.value.generate();
-}
+	async function handleImport(e: typeof form.value) {
+		form.value = { ...e };
+		if (!form.value.url) return;
+		twitterCard.value.generate();
+		facebookCard.value.generate();
+	}
 </script>
 <template>
-  <h1 class="text-4xl my-10">Dad Joke Generator</h1>
-  <UrlForm v-bind="form" @submit="handleImport"></UrlForm>
-  <div>
-    <CardTwitter ref="twitterCard" v-bind="form" />
-    <CardFacebook ref="facebookCard" v-bind="form" />
-  </div>
+	<h1 class="text-4xl my-10">Dad Joke Generator</h1>
+	<UrlForm v-bind="form" @submit="handleImport"></UrlForm>
+	<div>
+		<CardTwitter ref="twitterCard" v-bind="form" />
+		<CardFacebook ref="facebookCard" v-bind="form" />
+	</div>
 </template>

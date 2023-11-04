@@ -6,6 +6,7 @@ It should be in the form:
 noun location verb adverb
 could have an upvote button or like/dislike button
 could have an "I don't get it button that explains the joke in painful detail"
+can have an image: ss://bucket-object picture
 
 EC2 instructions:
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
