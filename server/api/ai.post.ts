@@ -4,8 +4,7 @@ import * as agents from "@/agents"
 export default defineEventHandler(async (event) => {
 
   const body = await readBody(event);
-  const agent = body.agent || "customerSupportAgent";
-  console.log("Object.keys(agents) = " + Object.keys(agents));
+  const agent = body.agent || "twitterAgent";
 
   if (!Object.keys(agents).includes(agent)) {
     throw new Error(`${agent} doesn't exist`);
