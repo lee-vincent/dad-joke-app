@@ -3,7 +3,7 @@
 		url: string;
 		temperature: number;
 	}>();
-	const { chat, state, firstMessage } = useChatAi({ agent: "twitter" });
+	const { chat, state, firstMessage } = useChatAi({ agent: "joke" });
 	const announcement = computed(() => firstMessage.value?.content);
 	const generate = () => nextTick(() => chat(props));
 	defineExpose({

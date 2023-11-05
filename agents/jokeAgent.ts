@@ -1,6 +1,6 @@
 import createAgent from ".";
 
-export const twitterAgent = createAgent((context) => {
+export const jokeAgent = createAgent((context) => {
   return {
     messages: [
       {
