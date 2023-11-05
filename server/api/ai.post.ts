@@ -28,7 +28,7 @@ export default defineEventHandler(async (event) => {
     // https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html
     throw error;
   }
-
+  // @ts-expect-error
   const { OPENAI_API_KEY } = JSON.parse(response.SecretString);
 
   const body = await readBody(event);
