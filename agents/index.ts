@@ -1,8 +1,8 @@
 // register all agent files here
-export * from "./twitterAgent";
+export * from "./jokeAgent";
 
 // and register types here
-export type Agent = "twitter";
+export type Agent = "joke";
 
 // util function for creating trainings with proper typing
 import type { CreateChatCompletionRequest } from "openai";
