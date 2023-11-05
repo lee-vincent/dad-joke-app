@@ -7,6 +7,9 @@ noun location verb adverb
 could have an upvote button or like/dislike button
 could have an "I don't get it button that explains the joke in painful detail"
 can have an image: ss://bucket-object picture
+deploy node.js on ec2: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/setting-up-node-on-ec2-instance.html
+use vue.js lifecycle hooks async created() to make api request to partner microservice to fill in the input form default text:
+https://vueschool.io/lessons/vue-3-component-lifecycle-hooks
 
 EC2 instructions:
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash

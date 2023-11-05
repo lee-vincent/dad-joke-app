@@ -1,0 +1,5 @@
+### Request to partner's microservice
+
+GET http://54.224.83.122:3000/api/rand
+Content-Type: application/json
+Authorization: Bearer randgen361
