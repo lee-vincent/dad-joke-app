@@ -1,3 +1,27 @@
+# CS361 Assignment 6 - Milestone #1 Requirements
+
+### Has a way for users to interact
+
+- GENERATE and REGENERATE Buttons
+- Input Form
+
+### Reflects each Inclusivity Heuristic
+
+1. **Explain the benefits of using new and existing features:** Everything on the page is very simple to understand and labeled appropriately.
+2. **Explain the costs of using new and existing features:** The pre-entered text in the input form gives the user an indication of how to use the website.
+3. **Let people gather as much information as they want, and no more than they want:** This is a single page webapp with an input form and a button so the user can gather all info just by looking at it.
+4. **Keep familiar features available:** As a user wants to regenerate a joke the only change to the web page is adding the new joke to the bottom.
+5. **Make undo/redo and backtracking available:** Hit regenerate button any time to redo.
+6. **Provide an explicit path through the task:** The title asking “What should we dad joke about” and the random pre-generated input text should give the user a strong indication of how to use the website. This is no different than what you see going to google.com
+7. **Provide ways to try out different approaches:** The user can enter any text they want to get different jokes.
+8. **Encourage tinkerers to tinker mindfully:** The user is totally protected because there is nothing to tinker with except for inputting different text
+
+### Reflects 3 Quality Attributes / Non-functional Requirements
+
+1. **Simplicity:** The web app will be extremely simple and easy to understand because it will look familiar by resembling the google.com search page.
+2. **Responsiveness:** The web app will respond with either the generated dad joke or a timeout message after 5 seconds.
+3. **Reusability:** The Vue.JS web-framework will be used (in 100% of the project) to keep HTML and JavaScript code re-useable.
+
 # TODO:
 
 Partner's microservice should generate random topics, and this app will submit it to the

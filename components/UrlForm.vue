@@ -13,7 +13,7 @@
 	<form @submit.prevent="$emit('submit', form)" class="mb-10">
 		<div class="flex">
 			<input
-				placeholder="What should we 'Dad Joke' about?"
+				placeholder="What should we 'Dad Joke' about? Cats? Dogs? Anything!"
 				v-model="form.url"
 				class="input input-bordered rounded-r-none w-full max-w-full"
 				type="text" />

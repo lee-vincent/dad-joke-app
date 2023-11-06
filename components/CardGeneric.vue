@@ -26,7 +26,7 @@
 			</div>
 			<div v-else>
 				<span class="italic opacity-80"
-					>Write some text to generate a dad joke</span
+					>Write some text above to generate a dad joke!</span
 				>
 			</div>
 
