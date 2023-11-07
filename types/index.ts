@@ -10,3 +10,8 @@ export interface Message {
   text: string;
 }
 export type AsyncState = null | "loading" | "error" | "complete";
+export interface ApiResponse {
+  location: string;
+  noun: string;
+  verb: string;
+}
